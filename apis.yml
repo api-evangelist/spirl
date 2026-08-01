@@ -1,7 +1,32 @@
 aid: spirl
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spirl.png
 name: Spirl
-description: Spirl is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Spirl is a non-human identity and access management (IAM) startup that in 2025
+  rebranded to Defakto (defakto.security); spirl.com now redirects to the Defakto
+  site. The company secures automated systems — workloads, services, CI/CD
+  pipelines, Kubernetes, and AI agents — by replacing static secrets and
+  hardcoded credentials with short-lived, cryptographically verifiable
+  identities built on open workload-identity standards (SPIFFE/SPIRE style).
+  Co-founded by Eli Nesterov (ex-ByteDance infrastructure) and Danny Oliveri, it
+  targets the enterprise gap where organizations run millions of non-human
+  identities protected only by static secrets. Defakto was named a 2025 Gartner
+  Cool Vendor in Identity-First Security. It is a portfolio company of Bloomberg
+  Beta. As of this profile the company publishes a marketing site, blog, and
+  security page but no public developer API, OpenAPI specification, SDKs, CLI, or
+  developer portal — access is via demo request, so there is no API surface to
+  enrich at this time.
 url: https://raw.githubusercontent.com/api-evangelist/spirl/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +34,25 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand:
+  former-name: Spirl
+  current-name: Defakto
+  current-domain: defakto.security
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Security
+- Identity
+- Non-Human Identity
+- Workload Identity
+- SPIFFE
+- Secrets Management
+- Zero Trust
+- CI/CD Security
+- Kubernetes
+- AI Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +60,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/spirl-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/spirl-domain-security.yml
 - type: Website
-  url: https://spirl.com/
+  url: https://www.defakto.security/
+- type: Blog
+  url: https://www.defakto.security/blog/
+- type: SignUp
+  url: https://www.defakto.security/demo/
+- type: Support
+  url: https://www.defakto.security/contact/
+- type: TermsOfService
+  url: https://www.defakto.security/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.defakto.security/privacy-policy/
+- type: Security
+  url: https://www.defakto.security/security/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
